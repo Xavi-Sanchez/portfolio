@@ -1,5 +1,6 @@
 ---
-layout: "page"
+layout: page
+title: Donate
 ---
 
 Donate to our site if you want!
