@@ -32,7 +32,7 @@ github_username:  jekyll
 locale: "en-US"
 
 # Build settings
-theme: minima
+theme: 
 markdown: kramdown
 plugins:
   - jekyll-feed
