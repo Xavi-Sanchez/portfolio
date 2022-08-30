@@ -32,7 +32,6 @@ github_username:  jekyll
 locale: "en-US"
 
 # Build settings
-theme: 
 markdown: kramdown
 plugins:
   - jekyll-feed
