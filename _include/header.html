@@ -1,0 +1,35 @@
+<!-- Header Main -->
+{% if site.locale and site.loacle != "" and site.locale != nil %}
+    <header>
+        <div class="hero">
+            {%- if siste.data.sitetext[site.locale].header.title -%}
+                <div class="">{{ site.data.sitetext[site.locale].header.title | markdownify }}</div>
+            {%- endif -%}
+
+            {%- if siste.data.sitetext[site.locale].header.text -%}
+                <div class="">{{ site.data.sitetext[site.locale].header.text | markdownify }}</div>
+            {%- endif -%}
+
+            {%- if siste.data.sitetext[site.locale].header.button -%}
+                <a class="" href="{{ site.data.sitetext[site.locale].header.buttonlink }}">{{ site.data.sitetext[site.locale].header.button | markdownify }}</a>
+            {%- endif -%}
+        </div>
+    </header>
+{% else %}
+    <header>
+        <div class="hero">
+            {%- if siste.data.sitetext.header.title -%}
+                <div class="">{{ site.data.sitetext.header.title | markdownify }}</div>
+            {%- endif -%}
+
+            {%- if siste.data.sitetext.header.text -%}
+                <div class="">{{ site.data.sitetext.header.text | markdownify }}</div>
+            {%- endif -%}
+
+            {%- if siste.data.sitetext.header.button -%}
+                <a class="" href="{{ site.data.sitetext.header.buttonlink }}">{{ site.data.sitetext.header.button | markdownify }}</a>
+            {%- endif -%}
+        </div>
+    </header>
+{% endif %}
+<!-- End of Header Main-->

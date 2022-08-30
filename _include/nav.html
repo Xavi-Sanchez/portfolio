@@ -1,0 +1,48 @@
+<!-- Navigation -->
+<nav>
+    <div class="container">
+        <a class="navbar" href="{{ site.baseurl }}">
+            {%- if site.logo -%}
+                <img></img>
+            {%- else -%}
+                {{ site.title }}
+            {%- endif -%}
+        </a>  
+    </div>
+    <!-- Responsive button -->
+    <button>
+        Map<i class="fas fa-bars"></i>
+    </button>
+    <!-- End Responsive button -->
+    <div>
+        <ul class="navbar">
+            {% if site.locale and site.locale != "" and site.locale != nil %}
+                {%- for link in site.data.navigation[site.locale].nav -%}
+                    <li class="nav-item">
+                        {%- if link.url -%}
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                        {%- else if link.section -%}
+                        <a href="{{ site.baseurl }}/#{{ link.section }}">{{ link.title }}</a>
+                        {%- else -%}
+                        <a href="#">{{ link.title }}</a>
+                        {%- endif -%}
+                    </li>
+                {%- endfor -%}
+            {% else %}
+                {%- for link in site.data.navigation.nav -%}
+                    <li>
+                        {%- if link.url -%}
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                        {%- else if link.section -%}
+                        <a href="{{ site.baseurl }}/#{{ link.section }}">{{ link.title }}</a>
+                        {%- else -%}
+                        <a href="#">{{ link.title }}</a>
+                        {%- endif -%}
+                    </li>
+                {%- endfor -%}
+            {% end if %}
+        </ul>
+    </div>
+</nav>
+
+<!-- End Navigation -->

@@ -1,0 +1,14 @@
+---
+layout: "wrapper"
+author: "Mr. Sánchez"
+---
+
+{% if page.title == "My First"%}
+    This is the First post, you know
+{% endif%}
+
+<h1>{{ page.title }}</h1>
+<h3>{{ layout.author }}</h3>
+<hr>
+
+{{ content }}

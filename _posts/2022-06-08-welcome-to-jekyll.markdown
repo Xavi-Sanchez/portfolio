@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New Title"
+title:  "Welcome to Jekyll!"
 date:   2022-07-20 16:54:48 +0200
 categories: jekyll new-cat
 author: "Mr. Sanchez"
