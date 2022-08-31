@@ -1,7 +1,7 @@
 <!-- Header Main -->
 {% if site.locale and site.loacle != "" and site.locale != nil %}
-    <header>
-        <div class="hero">
+    <header class="masthead">
+        <div class="container">
             {%- if siste.data.sitetext[site.locale].header.title -%}
                 <div class="">{{ site.data.sitetext[site.locale].header.title | markdownify }}</div>
             {%- endif -%}
@@ -16,8 +16,8 @@
         </div>
     </header>
 {% else %}
-    <header>
-        <div class="hero">
+    <header class="masthead">
+        <div class="container">
             {%- if siste.data.sitetext.header.title -%}
                 <div class="">{{ site.data.sitetext.header.title | markdownify }}</div>
             {%- endif -%}
