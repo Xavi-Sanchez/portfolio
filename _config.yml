@@ -31,12 +31,15 @@ url: "https://xavi-sanchez.github.io" # the base hostname & protocol for your si
 twitter_username: jekyllrb
 github_username:  jekyll
 
-logo: 
-  path: assets\img\simple.png
-  height: 60
+# logo: 
+  # path: assets\img\simple.png
+  # height: 60
 
 
 locale: "en-US"
+
+collections:
+  portfolio:
 
 # Build settings
 markdown: kramdown
