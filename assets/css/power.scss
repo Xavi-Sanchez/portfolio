@@ -18,14 +18,14 @@ $contact-image: "{{ site.data.style.contact-image }}";
 @import "base/page.scss";
 
 // Components
-//@import "components/buttons.scss";
+@import "components/buttons.scss";
 @import "components/navbar.scss";
-//@import "components/client-scroll.scss";
+@import "components/_client-scroll.scss";
 
 // Layout
 @import "layout/masthead.scss";
 //@import "layout/services.scss";
-//@import "layout/portfolio.scss";
+@import "layout/portfolio.scss";
 //@import "layout/timeline.scss";
 //@import "layout/team.scss";
 //@import "layout/contact.scss";
