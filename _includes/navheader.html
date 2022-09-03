@@ -1,21 +1,23 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: indianred">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="{{ site.baseurl/portfolio }}">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
             {%- if site.logo -%}
                 <img height="{{ site.logo.height | default: 52 }}" style="background-color: aquamarine" src="{{ site.logo.path }}";></img>
             {%- else -%}
                 {{ site.title }}
             {%- endif -%}
         </a>  
-    </div>
-    <!-- Responsive button -->
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <!-- Responsive button -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" 
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Map<i class="fas fa-bars"></i>
-    </button>
+        </button>
+    </div>
+    
     <!-- End Responsive button -->
     <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase">
+        <ul class="navbar-nav text-uppercase ml-auto">
             {% if site.locale and site.locale != "" and site.locale != nil %}
                 {%- for link in site.data.navigation[site.locale].nav -%}
                     <li class="nav-item">
@@ -32,11 +34,11 @@
                 {%- for link in site.data.navigation.nav -%}
                     <li>
                         {%- if link.url -%}
-                        <a href="{{ link.url }}">{{ link.title }}</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
                         {%- else if link.section -%}
-                        <a href="{{ site.baseurl }}/#{{ link.section }}">{{ link.title }}</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ site.baseurl }}/#{{ link.section }}">{{ link.title }}</a>
                         {%- else -%}
-                        <a href="#">{{ link.title }}</a>
+                        <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
                         {%- endif -%}
                     </li>
                 {%- endfor -%}
@@ -61,7 +63,7 @@
             {%- endif -%}
 
             {%- if site.data.sitetext[site.locale].header.button -%}
-                <a class="btn" href="{{ site.data.sitetext[site.locale].header.buttonlink }}">{{ site.data.sitetext[site.locale].header.button | markdownify }}</a>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext[site.locale].header.buttonlink }}">{{ site.data.sitetext[site.locale].header.button | markdownify }}</a>
             {%- endif -%}
             </div>
         </div>
@@ -79,7 +81,7 @@
             {%- endif -%}
 
             {%- if site.data.sitetext.header.button -%}
-                <a class="btn" href="{{ site.data.sitetext.header.buttonlink }}">{{ site.data.sitetext.header.button | markdownify }}</a>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext.header.buttonlink }}">{{ site.data.sitetext.header.button | markdownify }}</a>
             {%- endif -%}
             </div>
         </div>

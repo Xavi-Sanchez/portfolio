@@ -91,6 +91,12 @@
         margin: 20px 0 30px;
         @include serif-font;
       }
+      button.carousel-control-prev{
+        cursor: pointer;
+      }
+      button.carousel-control-next{
+        cursor: pointer;
+      }
       ul.list-inline {
         margin-top: 0;
         margin-bottom: 30px;

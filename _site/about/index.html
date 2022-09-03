@@ -23,7 +23,6 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
         <!-- Custom styles for this theme -->
-        <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
         <link href="assets/css/power.css" rel="stylesheet" />
 
         <!-- Page container change top padding when nav shrinks -->
@@ -44,15 +43,17 @@
         <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: indianred">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="">Your awesome title</a>  
-    </div>
-    <!-- Responsive button -->
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Your awesome title</a>  
+        <!-- Responsive button -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" 
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Map<i class="fas fa-bars"></i>
-    </button>
+        </button>
+    </div>
+    
     <!-- End Responsive button -->
     <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase">
+        <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/portfolio/#services">Services</a></li><li class="nav-item"><a class="nav-link js-scroll-trigger" href="/portfolio/#portfolio">Portfolio</a></li><li class="nav-item"><a class="nav-link js-scroll-trigger" href="/portfolio/#about">About</a></li>
         </ul>
     </div>
@@ -66,7 +67,7 @@
         <div class="container">
             <div class="intro-text"><div class="intro-lead-in"><p>Welcome to our Studio!</p>
 </div><div class="intro-heading text-uppercase"><p>It’s Nice To Meet You</p>
-</div><a class="btn" href="#services"><p>Tell Me More</p>
+</div><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services"><p>Tell Me More</p>
 </a></div>
         </div>
     </header>
@@ -177,6 +178,12 @@
             <!-- Bootstrap core JavaScript -->
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Plugin JavaScript -->
+	        <script src="assets/js/jquery.easing.min.js"></script>
+
+             <!-- Custom scripts for this template -->
+	        <script src="assets/js/power.min.js"></script>
 
     </body>
 </html>
